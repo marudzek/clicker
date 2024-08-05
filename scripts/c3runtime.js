@@ -4422,7 +4422,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite,
 		C3.Plugins.Text,
 		C3.Plugins.Touch,
-		C3.Plugins.Touch.Cnds.OnDoubleTapGestureObject,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
 		C3.Plugins.System.Acts.AddVar,
 		C3.Plugins.Text.Acts.SetText
 	];
@@ -4432,6 +4432,7 @@ self.C3_JsPropNameTable = [
 	{buttonGlobal: 0},
 	{counterGlobal: 0},
 	{Тач: 0},
+	{Текст: 0},
 	{boostyGlobal: 0}
 ];
 
@@ -4439,7 +4440,8 @@ self.InstanceType = {
 	background: class extends self.ITiledBackgroundInstance {},
 	buttonGlobal: class extends self.ISpriteInstance {},
 	counterGlobal: class extends self.ITextInstance {},
-	Тач: class extends self.IInstance {}
+	Тач: class extends self.IInstance {},
+	Текст: class extends self.ITextInstance {}
 }
 }
 
