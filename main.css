@@ -1,0 +1,33 @@
+* {
+    font-size: 20px;
+}
+body {
+    background-color: rgb(180, 231, 240);
+}
+h1 {
+    color: darkslateblue;
+    background-color: rgb(255, 255, 255);
+}
+p {
+    background-color: rgb(71, 241, 79);
+} 
+b {
+    background-color: rgb(255, 0, 51);
+    font-size: 30px;
+}
+ul, li, a{
+    text-decoration: none;
+    background-color: rgb(226, 9, 161);
+    width: 200px;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 30px;
+
+}
+a:hover {
+    color: chocolate;
+    font-size: 40px;
+}   
+img {
+    width: 400px;
+}
