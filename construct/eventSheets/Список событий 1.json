@@ -1,0 +1,274 @@
+{
+	"name": "Список событий 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "counterGlobal",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 790202538391794
+		},
+		{
+			"eventType": "variable",
+			"name": "boostyGlobal",
+			"type": "number",
+			"initialValue": "10000",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 584613104707039
+		},
+		{
+			"eventType": "variable",
+			"name": "skinGlobal",
+			"type": "number",
+			"initialValue": "1",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 398936779698729
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 956764556942992
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "counterGlobal",
+					"sid": 196366023635482,
+					"parameters": {
+						"text": "counterGlobal"
+					}
+				}
+			],
+			"sid": 341138608368725
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 343740810424878
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 125899903914618,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "buttonGlobal",
+					"sid": 820937385916915,
+					"parameters": {
+						"animation": "\"Змея\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 922694851298713
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 325873621217639
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 981996708105355,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "buttonGlobal",
+					"sid": 311210895163072,
+					"parameters": {
+						"animation": "\"переименовать\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 334733738324378
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 699678279235667
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 773961723160914,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "buttonGlobal",
+					"sid": 580815738459514,
+					"parameters": {
+						"animation": "\"ранг2\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 808123002612547
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 239571042873969
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 461284453266824,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "buttonGlobal",
+					"sid": 558217617359903,
+					"parameters": {
+						"animation": "\"сигма\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 877240912382054
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 139575946918061
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 182007838852977,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-animation",
+					"objectClass": "buttonGlobal",
+					"sid": 587093206873244,
+					"parameters": {
+						"animation": "\"рыба\"",
+						"from": "beginning"
+					}
+				}
+			],
+			"sid": 885315268039828
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 521538670619369,
+					"parameters": {
+						"object": "buttonGlobal"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 452385266523830,
+					"parameters": {
+						"variable": "counterGlobal",
+						"value": "boostyGlobal"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "counterGlobal",
+					"sid": 992797238808945,
+					"parameters": {
+						"text": "counterGlobal"
+					}
+				}
+			],
+			"sid": 777662546961469
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 263530972830025,
+					"parameters": {
+						"object": "кнопкаSHOP"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 148681736256762,
+					"parameters": {
+						"layout": "Макет 2"
+					}
+				}
+			],
+			"sid": 300627501453721
+		}
+	],
+	"sid": 153800824628343
+}

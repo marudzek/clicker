@@ -1,0 +1,60 @@
+{
+	"name": "магазин",
+	"plugin-id": "Sprite",
+	"sid": 990836150870885,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 302439270305707
+		}
+	],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 482,
+						"height": 482,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 8680794,
+						"collisionPoly": {
+							"points": [
+								0.23858921161825727,
+								0.002074688796680498,
+								0.7925311203319502,
+								0.024896265560165973,
+								0.9813278008298755,
+								0.44398340248962653,
+								0.9875518672199171,
+								0.9979253112033195,
+								0.002074688796680498,
+								0.9875518672199171,
+								0.01867219917012448,
+								0.44398340248962653
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 782270223328257,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

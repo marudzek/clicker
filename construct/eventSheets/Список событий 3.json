@@ -1,0 +1,417 @@
+{
+	"name": "Список событий 3",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "skin4",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 617364325643120
+		},
+		{
+			"eventType": "variable",
+			"name": "skin5",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 192977879080143
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "кнопка1Страницы",
+					"sid": 702281645991556
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 990332810972802,
+					"parameters": {
+						"layout": "Макет 2"
+					}
+				}
+			],
+			"sid": 215013469417696
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 333432964864932,
+					"parameters": {
+						"object": "кнопкаTAP"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 157895381667339,
+					"parameters": {
+						"layout": "Макет 1"
+					}
+				}
+			],
+			"sid": 483339925389453
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "кнопкаКупитьСкин5",
+					"sid": 249820842402746
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 268399351484915,
+					"parameters": {
+						"variable": "counterGlobal",
+						"comparison": 5,
+						"value": "1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 456942377101499,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "4"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 470119618324057,
+					"parameters": {
+						"variable": "skin4",
+						"value": "1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 501706999610135,
+					"parameters": {
+						"variable": "counterGlobal",
+						"value": "1000"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "кнопкаКупитьСкин5",
+					"sid": 740128287734197,
+					"parameters": {
+						"text": "\"куплено\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаКупитьСкин5",
+					"sid": 247886344471893,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 772734985538712
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 624820251067706
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 754107569670170,
+					"parameters": {
+						"variable": "skin4",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "кнопкаКупитьСкин5",
+					"sid": 742978813746117,
+					"parameters": {
+						"text": "\"куплено\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаКупитьСкин5",
+					"sid": 851617738690266,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 794326585453704
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 862129074230438
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 347085032190557,
+					"parameters": {
+						"variable": "skin4",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 117622616588168,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 1,
+						"value": "4"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 892879606866832,
+					"parameters": {
+						"object-to-create": "кнопкаВзятьСкин5",
+						"layer": "0",
+						"x": "40",
+						"y": "250",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 854294889130013
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "кнопкаВзятьСкин5",
+					"sid": 826999079363646
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 389152659694966,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "4"
+					}
+				}
+			],
+			"sid": 464019438077402
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "кнопкаКупитьСкин6",
+					"sid": 681526566834308
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 149355362708757,
+					"parameters": {
+						"variable": "counterGlobal",
+						"comparison": 5,
+						"value": "10000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 208425672825741,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "5"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 965711239830003,
+					"parameters": {
+						"variable": "skin5",
+						"value": "1"
+					}
+				},
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 871065342794611,
+					"parameters": {
+						"variable": "counterGlobal",
+						"value": "10000"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "кнопкаКупитьСкин6",
+					"sid": 784391046916003,
+					"parameters": {
+						"text": "\"куплено\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаКупитьСкин6",
+					"sid": 866210137163215,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 720054960306754
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 676520420298354
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 763368480299434,
+					"parameters": {
+						"variable": "skin5",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "кнопкаКупитьСкин6",
+					"sid": 484906130645117,
+					"parameters": {
+						"text": "\"куплено\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаКупитьСкин6",
+					"sid": 426260017513175,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 383846315474851
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 154381019022699
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 906967918937465,
+					"parameters": {
+						"variable": "skin5",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 301416437852946,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 1,
+						"value": "5"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 509111616083504,
+					"parameters": {
+						"object-to-create": "кнопкаВзятьСкин6",
+						"layer": "0",
+						"x": "295",
+						"y": "266",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				}
+			],
+			"sid": 447349151545296
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "кнопкаВзятьСкин6",
+					"sid": 275765152831158
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 800495410165448,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "5"
+					}
+				}
+			],
+			"sid": 834473438002283
+		}
+	],
+	"sid": 488962928546076
+}

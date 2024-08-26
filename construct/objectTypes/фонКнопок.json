@@ -1,0 +1,27 @@
+{
+	"name": "фонКнопок",
+	"plugin-id": "TiledBg",
+	"sid": 774136560527210,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 118353923306002
+		}
+	],
+	"effectTypes": [],
+	"image": {
+		"width": 250,
+		"height": 250,
+		"originX": 0.5,
+		"originY": 0.5,
+		"originalSource": "",
+		"exportFormat": "lossless",
+		"exportQuality": 0.8,
+		"imageSpriteId": 2152994,
+		"useCollisionPoly": true,
+		"tag": ""
+	}
+}

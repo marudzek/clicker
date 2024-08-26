@@ -1,0 +1,50 @@
+{
+	"name": "ранг4",
+	"plugin-id": "Sprite",
+	"sid": 790165071427701,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"animations": {
+		"items": [
+			{
+				"frames": [
+					{
+						"width": 995,
+						"height": 995,
+						"originX": 0.5,
+						"originY": 0.5,
+						"originalSource": "",
+						"exportFormat": "lossless",
+						"exportQuality": 0.8,
+						"imageSpriteId": 6036790,
+						"collisionPoly": {
+							"points": [
+								0.001557632398753894,
+								0.001841620626151013,
+								0.9984423676012462,
+								0.001841620626151013,
+								0.9984423676012462,
+								0.998158379373849,
+								0.001557632398753894,
+								0.998158379373849
+							]
+						},
+						"useCollisionPoly": true,
+						"duration": 1,
+						"tag": ""
+					}
+				],
+				"sid": 660435645221778,
+				"name": "Animation 1",
+				"isLooping": false,
+				"isPingPong": false,
+				"repeatCount": 1,
+				"repeatTo": 0,
+				"speed": 5
+			}
+		],
+		"subfolders": []
+	}
+}

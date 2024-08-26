@@ -1,0 +1,15 @@
+{
+	"name": "кнопочки",
+	"plugin-id": "Text",
+	"sid": 926580807772920,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "Anchor",
+			"name": "Якорь",
+			"sid": 156941913570509
+		}
+	],
+	"effectTypes": []
+}

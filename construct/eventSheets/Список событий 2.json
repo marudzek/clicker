@@ -1,0 +1,570 @@
+{
+	"name": "Список событий 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "skin3",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "vjk,fydct,xd",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 478896936920057
+		},
+		{
+			"eventType": "variable",
+			"name": "skin1",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 235682467053558
+		},
+		{
+			"eventType": "variable",
+			"name": "skin2",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 997817660521245
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 153406480861104,
+					"parameters": {
+						"object": "кнопкаTAP"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 906807718868991,
+					"parameters": {
+						"layout": "Макет 1"
+					}
+				}
+			],
+			"sid": 883854143583372
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Мышь",
+					"sid": 650816617072915,
+					"parameters": {
+						"direction": "down"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 303390220182880,
+					"parameters": {
+						"y": "650"
+					}
+				}
+			],
+			"sid": 733809720545701
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-mouse-wheel",
+					"objectClass": "Мышь",
+					"sid": 198383612462286,
+					"parameters": {
+						"direction": "up"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "scroll-to-y",
+					"objectClass": "System",
+					"sid": 597514643005036,
+					"parameters": {
+						"y": "0"
+					}
+				}
+			],
+			"sid": 360711490542197
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 359959045674748,
+					"parameters": {
+						"variable": "skin1",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 967352872684913,
+					"parameters": {
+						"variable": "counterGlobal",
+						"comparison": 5,
+						"value": "1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 841163213530228,
+					"parameters": {
+						"variable": "counterGlobal",
+						"value": "1000"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 687720236369790,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 743986893286297,
+					"parameters": {
+						"variable": "skin1",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 437740173935872
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 114160201357674
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 212263537229952,
+					"parameters": {
+						"variable": "skin1",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 669313736413622,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "ранг1",
+					"sid": 636889210310729,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Чёрнобелый\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 564723136149211,
+					"parameters": {
+						"object-to-create": "кнопкаВзятьСкин3",
+						"layer": "0",
+						"x": "75",
+						"y": "309",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаВзятьСкин3",
+					"sid": 495844524584946,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 927853146489345
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 116195628497397,
+					"parameters": {
+						"object": "кнопкаВзятьСкин3"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 602347998437379,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 1,
+						"value": "2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 377223824123166,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "2"
+					}
+				}
+			],
+			"sid": 912398424046303
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 302141883623685,
+					"parameters": {
+						"variable": "skin2",
+						"comparison": 0,
+						"value": "0"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 197198182469218,
+					"parameters": {
+						"variable": "counterGlobal",
+						"comparison": 5,
+						"value": "7500"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 653186597007996,
+					"parameters": {
+						"variable": "counterGlobal",
+						"value": "10000"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 849023123739707,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "3"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 583978599171397,
+					"parameters": {
+						"variable": "skin2",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 783249850349501
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 276626045427345
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 346775887701670,
+					"parameters": {
+						"variable": "skin2",
+						"comparison": 0,
+						"value": "1"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 972587563280078,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 0,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "ранг2",
+					"sid": 958825946500737,
+					"parameters": {
+						"mode": "enable",
+						"effect": "\"Чёрнобелый\""
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 308699172750016,
+					"parameters": {
+						"object-to-create": "кнопкаВзятьСкин2",
+						"layer": "0",
+						"x": "310",
+						"y": "309",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаВзятьСкин2",
+					"sid": 466145281909971,
+					"parameters": {
+						"mode": "disabled"
+					}
+				}
+			],
+			"sid": 959857677093549
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 619668970081791,
+					"parameters": {
+						"object": "кнопкаВзятьСкин2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 739142922593127,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 1,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 689968637769879,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "3"
+					}
+				}
+			],
+			"sid": 677741515666987
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 636707293724884
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 412736925233273,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 1,
+						"value": "3"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "кнопкаВзятьСкин2",
+					"sid": 304748357288209,
+					"parameters": {
+						"mode": "enabled"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "кнопкаВзятьСкин2",
+					"sid": 327306469101716,
+					"parameters": {
+						"text": "\"актевировать\""
+					}
+				}
+			],
+			"sid": 395556622399049
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 555528172965404
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 937701500509400,
+					"parameters": {
+						"variable": "skinGlobal",
+						"comparison": 1,
+						"value": "2"
+					}
+				},
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 185738451470545,
+					"parameters": {
+						"variable": "skin1",
+						"comparison": 0,
+						"value": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 402371928611928,
+					"parameters": {
+						"object-to-create": "кнопкаВзятьСкин1",
+						"layer": "0",
+						"x": "75",
+						"y": "309",
+						"create-hierarchy": false,
+						"template-name": "\"\""
+					}
+				},
+				{
+					"id": "set-effect-enabled",
+					"objectClass": "ранг1",
+					"sid": 272397452026805,
+					"parameters": {
+						"mode": "disable",
+						"effect": "\"чёрнобелый\""
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "кнопкаВзятьСкин3",
+					"sid": 442493456261258,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 741205137924539
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-tap-object",
+					"objectClass": "Тач",
+					"sid": 149970132599865,
+					"parameters": {
+						"object": "кнопкаВзятьСкин1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 251102257106803,
+					"parameters": {
+						"variable": "skinGlobal",
+						"value": "2"
+					}
+				},
+				{
+					"id": "set-visible",
+					"objectClass": "кнопкаВзятьСкин1",
+					"sid": 322517331377014,
+					"parameters": {
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 309894263439189
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "кнопка2Страницы",
+					"sid": 491041611672821
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 162368823595188,
+					"parameters": {
+						"layout": "Макет 3"
+					}
+				}
+			],
+			"sid": 826257101374007
+		}
+	],
+	"sid": 226550257395257
+}
