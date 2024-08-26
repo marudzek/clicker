@@ -15,7 +15,7 @@
 			"eventType": "variable",
 			"name": "boostyGlobal",
 			"type": "number",
-			"initialValue": "10000",
+			"initialValue": "1",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,

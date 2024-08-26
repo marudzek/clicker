@@ -1,6 +1,6 @@
 {
-	"name": "Мой кликер",
-	"short_name": "Мой кликер",
+	"name": "construct",
+	"short_name": "construct",
 	"description": "",
 	"start_url": "index.html",
 	"display": "fullscreen",
